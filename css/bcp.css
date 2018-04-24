@@ -94,7 +94,6 @@ a.black-under:hover {
 }
 
 .logo img {
-
   width: 20%;
   padding: 1rem;
 }
@@ -166,8 +165,22 @@ section {
 }
 
 .intro {
+  padding: 0 2rem 1rem;
   margin-top: 3rem;
   width: 68%;
+}
+
+.contributor {
+  width: 68%;
+  padding: 0 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contributor img {
+  padding: 0 1.3rem 0 1.3rem;
+  width: 9.5rem;
 }
 
 footer {
@@ -307,6 +320,10 @@ nav.navbar.navbar-default.navbar-fixed-top {
   width: 67vw;
   padding: 4rem 2rem;
   display: block;
+}
+
+.logo-row {
+  width: 67vw;
 }
 
 .blue-ep,
@@ -541,8 +558,8 @@ li:hover {}
   background-image: url("../img/ep-2-s2.png");
 }
 
-.ep-2-s3 {
-  background-image: url("../img/ep-2-s3.png");
+.ep-3-s2 {
+  background-image: url("../img/ep-3-s2.png");
 }
 
 .ep-4-s2 {
@@ -551,6 +568,14 @@ li:hover {}
 
 .ep-5-s2 {
   background-image: url("../img/ep-5-s2.png");
+}
+
+.ep-6-s2 {
+  background-image: url("../img/ep-6-s2.png");
+}
+
+.ep-7-s2 {
+  background-image: url("../img/ep-7-s2.png");
 }
 
 .linkedin-white,
@@ -924,9 +949,18 @@ svg.link-blue-tablet {
   }
 }
 
+@media (max-width: 1450px) {
+  .contributor img {
+    width: 24%;
+  }
+}
+
 @media (max-width: 1350px) {
   svg.twitter-blue-tablet {
     left: 21%;
+  }
+  .contributor-logos img {
+    width: 6rem;
   }
 }
 
@@ -1034,6 +1068,10 @@ svg.link-blue-tablet {
     left: 5.5rem;
   }
 
+  .contributor img {
+    padding: 0 0.5rem 0 0.5rem; 
+  }
+
   .top-writeup {
     margin-bottom: 2rem;
   }
@@ -1044,6 +1082,9 @@ svg.link-blue-tablet {
 
   .text-container-2-tablet {
     left: 7.5rem;
+  }
+  .contributor-logos img {
+    width: 5rem;
   }
 }
 @media (max-width: 980px) {
@@ -1061,6 +1102,10 @@ svg.link-blue-tablet {
 
   .text-container-2-tablet {
     left: 4.5rem;
+  }
+
+  .contributor {
+    width: 71%;
   }
 
   .tablet-container-1 {
@@ -1082,11 +1127,23 @@ svg.link-blue-tablet {
   svg.twitter-blue-tablet {
     left: 23.5%;
   }
+  .contributor-logos img {
+    width: 4rem;
+  }
 }
 
 @media (max-width: 875px) {
   .writeup4 h4 {
     margin-top: 11px;
+  }
+  .contributor img {
+    width: 23%;
+  }
+}
+
+@media (max-width: 835px) {
+  .contributor-logos img {
+    margin: 0 31px -1px 0;
   }
 }
 
@@ -1128,6 +1185,14 @@ svg.link-blue-tablet {
 @media (max-width: 768px) {
   .logo img {
     width: 40%;
+  }
+
+  .contributor-logos img {
+    width: 5rem;
+  }
+
+  .logo-row {
+    width: 82vw;
   }
 
   svg.twitter-blue-tablet,
@@ -1320,7 +1385,7 @@ svg.link-blue-tablet {
     width: 4.5%
   }
 
-   svg.twitter-blue-tablet {
+  svg.twitter-blue-tablet {
     left: 20%;
   }
 }
@@ -1328,6 +1393,24 @@ svg.link-blue-tablet {
   section {
     padding-bottom: 0;
     margin-bottom: -1rem;
+  }
+
+  .contributor {
+    width: 93%;
+  }
+
+  .logo-row {
+    margin-bottom: -1rem;
+  }
+
+  .ep-1-s2, 
+  .ep-3-s2, 
+  .ep-2-s2, 
+  .ep-4-s2, 
+  .ep-5-s2, 
+  .ep-6-s2, 
+  .ep-7-s2 {
+    background-size: 12rem;
   }
 
   .twitter-blue,
@@ -1357,6 +1440,10 @@ svg.link-blue-tablet {
   }
 
   .intro {
+    width: 84vw;
+  }
+
+  .logo-row {
     width: 84vw;
   }
 
@@ -1525,7 +1612,7 @@ svg.link-blue-tablet {
     width: 5.5%
   }
 
-   svg.twitter-blue-tablet {
+  svg.twitter-blue-tablet {
     left: 22.5%;
   }
 }
@@ -1676,7 +1763,7 @@ svg.link-blue-tablet {
     width: 7.5%
   }
 
-   svg.twitter-blue-tablet {
+  svg.twitter-blue-tablet {
     left: 28%;
   }
 }
